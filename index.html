@@ -2,20 +2,28 @@
 <html lang="en">
 
 <head>
-    <title>Jason Barrientos' Resume</title>
+    <title>JASON BARRIENTOS RESUME</title>
 
     <style>
         body {
-            font-family: Arial, sans-serif;
+            font-family: Helvetica, sans-serif;
             margin: 20px;
         }
 
         h1 {
-            color: #333;
-            transform: rotate(270deg);
-            
-            font-size: 150px;
-            /* display: inline-block; */
+            rotate: 180deg;
+            position: fixed;
+            left: 5rem;
+            top: 0;
+            height: 100vh;
+            margin: 0;
+            writing-mode: vertical-lr;
+            display: flex;
+            white-space: nowrap;
+            align-items: center;
+            justify-content: center;
+            font-size: 100px;
+
         }
 
 
@@ -27,20 +35,41 @@
             color: #777;
         }
 
-        .parent {
+        .parent-grid {
             display: grid;
             grid-template-columns: 300px 1fr;
             grid-template-rows: 1fr;
             grid-column-gap: 0px;
             grid-row-gap: 0px;
         }
+
+        .right {
+            display: grid;
+            grid-template-columns: subgrid;
+            grid-column: 2/span 2;
+        }
+
+        .Contact{
+            position: fixed;
+            bottom: 100px;
+            left: 320px;
+            width: calc(100% - 300px);
+            
+        }
+        p {
+            font-size:15px; 
+            line-height: 22px;
+        }
+        /*h4{
+            margin-bottom: -10px;
+        }*/
     </style>
 </head>
 
 <body>
-    <div class="parent">
+    <div class="parent-grid">
         <div class="left">
-            <h1>Jason Barrientos</h1>
+            <h1>JASON BARRIENTOS</h1>
         </div>
 
         <div class="right">
@@ -51,13 +80,20 @@
             <div class="Work">
                 <h2>Work</h2>
                 <h4>Lead Cashier (2022-Present)</h4>
-                <p>Crossroads Trading Co., 2656 Griffith Park Blvd, Los Angeles, CA 90039</p>
+                <p>Crossroads Trading Company</p>
+                <p>2656 Griffith Park Blvd, Los Angeles, CA 90039</p>
                 <h4>Expert Buyer (2022-Present)</h4>
-                <p>Crossroads Trading Co., 2656 Griffith Park Blvd, Los Angeles, CA 90039</p>
+                <p>Crossroads Trading Company</p>
+                <p>2656 Griffith Park Blvd, Los Angeles, CA 90039</p>
                 <h4>Account Manager Assistant (2025)</h4>
-                <p> Lefty Production Company, 318 W 9th St #1010, Los Angeles, CA 90015</p>
+                <p> Lefty Production Company</p>
+                <p>318 W 9th St #1010, Los Angeles, CA 90015</p>
             </div>
-
+           
+            <div class="Photo">
+                <img src="blankportrait.png" alt="Jason Barrientos" width="200" height="200">
+            </div>
+            
             <div class="Education">
                 <h2>Education</h2>
                 <h4>Fashion Design Certificate (In Progress)</h4>
@@ -67,7 +103,9 @@
                 <p> Pasadena City College, Pasadena, CA </p>
                 <p> 2024-2026 </p>
             </div>
-
+            
+            
+            
             <div class="Skills">
                 <h2>Skills</h2>
                 <p>Adobe Photoshop, Illustrator, InDesign</p>
@@ -79,12 +117,19 @@
                 <p>Fashion Buying</p>
             </div>
 
+            <div class="Profile">
+                <h2>Profile</h2>
+                <p>Design/Media Arts student with a strong background in retail buying and customer service. Experienced in managing teams, coordinating events, and providing exceptional customer experiences. Skilled in Adobe Creative Suite, garment construction, pattern making, fashion illustration, and trend forecasting. Seeking to leverage my skills and experience to contribute to a dynamic fashion design team.</p>
+            </div>
+
             <div class="Contact">
                 <h2>Lets Get In Touch</h2>
                 <h4>jasonbarrientos@gmail.com</h4>
                 <h4>(555) 555-5555</h4>
                 <h4>Pasadena, CA</h4>
             </div>
+
+
         </div>
     </div>
 </body>
